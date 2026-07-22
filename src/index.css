@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-main: var(--bg-main);
+  --color-bg-card: var(--bg-card);
+  --color-bg-sidebar: var(--bg-sidebar);
+  --color-bg-item: var(--bg-item);
+  --color-border-custom: var(--border-custom);
+  --color-text-main: var(--text-main);
+  --color-text-title: var(--text-title);
+  --color-text-muted: var(--text-muted);
+  --color-accent-custom: var(--accent-custom);
+  --color-accent-custom-hover: var(--accent-custom-hover);
+  --color-shadow-custom: var(--shadow-custom);
+}
+
+:root {
+  /* Default to Dark Theme */
+  --bg-main: #0A0B10;
+  --bg-card: #141620;
+  --bg-sidebar: #0F111A;
+  --bg-item: #0F111A;
+  --border-custom: rgba(255, 255, 255, 0.08);
+  --text-main: #cbd5e1; /* slate-300 */
+  --text-title: #ffffff; /* white */
+  --text-muted: #94a3b8; /* slate-400 */
+  --accent-custom: #10b981; /* emerald-500 */
+  --accent-custom-hover: #34d399; /* emerald-400 */
+  --shadow-custom: rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
+}
+
+.theme-dark {
+  --bg-main: #0A0B10;
+  --bg-card: #141620;
+  --bg-sidebar: #0F111A;
+  --bg-item: #0F111A;
+  --border-custom: rgba(255, 255, 255, 0.08);
+  --text-main: #cbd5e1;
+  --text-title: #ffffff;
+  --text-muted: #94a3b8;
+  --accent-custom: #10b981;
+  --accent-custom-hover: #34d399;
+  --shadow-custom: rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
+}
+
+.theme-light {
+  --bg-main: #f1f5f9; /* slate-100 */
+  --bg-card: #ffffff; /* crisp white card */
+  --bg-sidebar: #ffffff; /* crisp white sidebar */
+  --bg-item: #f8fafc; /* slate-50 item container */
+  --border-custom: rgba(0, 0, 0, 0.08);
+  --text-main: #334155; /* slate-700 */
+  --text-title: #0f172a; /* slate-900 */
+  --text-muted: #64748b; /* slate-500 */
+  --accent-custom: #059669; /* emerald-600 */
+  --accent-custom-hover: #10b981; /* emerald-500 */
+  --shadow-custom: rgba(0, 0, 0, 0.04);
+  color-scheme: light;
+}
+
+.theme-warm {
+  --bg-main: #f5eedc; /* rich warm cream main background */
+  --bg-card: #fdfaf3; /* cozy warm cream card container */
+  --bg-sidebar: #ede2cd; /* warm cream sidebar */
+  --bg-item: #f7f1e3; /* warm light cream item card */
+  --border-custom: rgba(139, 92, 26, 0.2); /* warm soft amber border */
+  --text-main: #4a3728; /* warm dark brown text */
+  --text-title: #2c1b0f; /* deep warm brown headings */
+  --text-muted: #8a705e; /* warm medium brown labels */
+  --accent-custom: #b45309; /* amber-700 */
+  --accent-custom-hover: #d97706; /* amber-600 */
+  --shadow-custom: rgba(139, 92, 26, 0.08);
+  color-scheme: light;
+}
+
+/* Smooth transition for theme switching */
+body, div, aside, main, h1, h2, h3, h4, p, span, button, input, select, textarea {
+  transition-property: background-color, border-color, text-color, fill, stroke, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}

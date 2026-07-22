@@ -1,0 +1,6 @@
+{
+  "name": "Groceries Management System",
+  "description": "An elegant client-side groceries and inventory management application with categories, locations, expiry tracking, and shopping list management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
